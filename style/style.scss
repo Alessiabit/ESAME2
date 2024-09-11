@@ -1,0 +1,180 @@
+ /* Variabili per colori e valori comuni*/
+$primary-color: #000000;
+$secondary-color: #f9f8f8;
+$gradient-color: #5e5e5e;
+$background-color: #ffffff;
+$border-color: #bebebe;
+$menu-color: #868889;
+$checked-color: rgba(221, 220, 220, 0.269);
+
+/* Mixin per il gradient*/
+@mixin gradient($from, $to) {
+  background: linear-gradient(to left, $from, $to);
+}
+
+/* Global styles*/
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: black;
+  height: 100%;
+}
+
+// Top navigation bar
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  @include gradient($secondary-color, $gradient-color);
+  color: $primary-color;
+  height: 50px;
+  padding: 1em;
+}
+
+// Menu styles
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  z-index: 100;
+
+  li {
+    margin: 0 1rem;
+    overflow: hidden;
+  }
+  a{
+    display: block;
+    padding: 1px;
+    margin: 0;
+  }
+}
+
+// Menu button
+.menu-bottone {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#linee {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: $primary-color;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+// Checked state for menu button
+#linee:checked + .menu-bottone .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#linee:checked + .menu-bottone .menu-button {
+  background: $checked-color;
+}
+
+#linee:checked + .menu-bottone .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+// Anchor styles
+a {
+  color: $primary-color;
+  margin-left: 100px;
+  text-decoration: none;
+}
+
+// Footer styles
+footer {
+  @include gradient($secondary-color, $gradient-color);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+  width: 100%;
+
+  a {
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+    margin-left: 10px;
+  }
+}
+
+// Variabili
+$menu-color: #868889; // Modifica con il colore desiderato per il menu
+$border-color: #bebebe;
+$primary-color: #000; // Colore per il testo dei menu
+$background-color: #ffffff; // Colore di sfondo per i menu
+
+
+// Media query per dispositivi mobili
+@media (max-width: 768px) {
+  .menu {
+    display: none; 
+    flex-direction: column;
+    width: 100%;
+    background: $secondary-color;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 99; 
+  }
+
+  .menu-bottone {
+    display: flex; 
+  }
+
+  #linee:checked + .menu-bottone + .menu {
+    display: flex; 
+   
+  }
+
+  .menu li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: $primary-color;
+    background-color: $background-color;
+    border: 1px solid $menu-color;
+  }
+
+
+}

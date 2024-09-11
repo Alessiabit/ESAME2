@@ -1,0 +1,42 @@
+{
+    "home": {
+        "title": "Home Page",
+        "content": "Benvenuti nella mia pagina principale.",
+         "primo" : "BENVENUTO",
+        "paragrafo" : "Esplora il mio sito!",
+        "contenuto" : "Lorem ipsup Lorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsup"
+    },
+    "aboutme": {
+        "title": "Chi Sono",
+        "titolo" : "ABOUT ME",
+        "titolo2" : "MY HOBBIES",
+        "contenuto" : "Lorem ipsup Lorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsup",
+        "content": "Sono un web designer con esperienza in vari progetti.",
+         "primo" : "BENVENUTO",
+        "paragrafo" : "Esplora il mio sito!"
+    },
+    "portfolio": {
+        "title": "Il Mio Portfolio",
+        "content": "Qui troverai alcuni dei miei lavori più recenti.",
+        "contenuto" : "Lorem ipsup Lorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsup",
+         "primo" : "BENVENUTO",
+        "paragrafo" : "Esplora il mio sito!"
+    },
+    "contatti": {
+        "title": "Contattami",
+        "content": "Per favore, sentiti libero di contattarmi tramite email o telefono."
+    },
+    "progettosingolo": {
+        "title": "Web Designer",
+        "content": "Per favore, sentiti libero di contattarmi tramite email o telefono.",
+        "contenuto" : "Lorem ipsup Lorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsupLorem ipsup",
+         "primo" : "BENVENUTO",
+        "paragrafo" : "Esplora il mio sito!"
+    }
+   
+   
+}
+
+
+
+
